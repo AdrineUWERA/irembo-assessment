@@ -70,7 +70,7 @@ export default function Home() {
       companyName: yup.string().required("This field is required"),
       tinNumber: yup
         .string()
-        .matches(/^\d{8}$/i, "Tin number should be 9 digits")
+        .matches(/^\d{9}$/i, "Tin number should be 9 digits")
         .required("This field is required"),
       registrationDate: yup.date().required("This field is required"),
       businessAddress: yup.string().required("This field is required"),
